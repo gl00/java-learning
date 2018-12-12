@@ -1,0 +1,36 @@
+<html>
+<head>
+    <!--<meta charset="UTF-8"/>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>表单提交</title>
+</head>
+<body>
+<h1>POST 方式提交</h1>
+<form method="post" action="/javaweb-demo/RequestDemo3">
+    用户名：<input type="text" name="username"><br>
+    邮&emsp;箱：<input type="email" name="email"><br>
+    性&emsp;别：<input type="radio" name="gender" value="male" id="male"><label for="male">男</label>
+    <input type="radio" name="gender" value="female" id="female"><label for="female">女</label><br>
+    所在地：<select name="location">
+    <option value="beijing">北京</option>
+    <option value="shanghai">上海</option>
+    <option value="guangzhou">广州</option>
+    <option value="shenzhen">深圳</option>
+</select><br>
+    语&emsp;言：<input type="checkbox" name="language" value="chinese" id="chinese"/><label for="chinese">中文</label>
+    <input type="checkbox" name="language" value="english" id="english"/><label for="english">English</label>
+    <input type="checkbox" name="language" value="spanish" id="spanish"/><label for="spanish">Español</label>
+    <input type="checkbox" name="language" value="french" id="french"/><label for="french">Français</label><br>
+    备&emsp;注：<textarea name="comment" rows="10"></textarea><br>
+    头&emsp;像：<input type="file" name="avatar"><br>
+    <!-- 隐藏字段 -->
+    <input type="hidden" name="id" value="1234567890">
+    <input type="submit" value="提交">
+</form>
+<h1>GET 方式提交</h1>
+<form method="get" action="/javaweb-demo/RequestDemo3">
+    用户名：<input type="text" name="username"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阻止表单重复提交示例</title>
+</head>
+<body>
+<form action="/javaweb-demo/SubmitFormServlet" method="post" onsubmit="return doSubmit();">
+    用户名: <input type="text" name="username"><br>
+    <input type="submit" value="提交"/>
+</form>
+<script>
+    // JavaScript 阻止重复提交
+
+    var submitted = false;
+
+    function doSubmit() {
+        if (submitted) {
+            return false;
+        } else {
+            submitted = true;
+            return true;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<users>
+    <user>
+        <id>1001</id>
+        <username>aaa</username>
+        <password>123</password>
+        <email>aaa@gmail.com</email>
+        <birthday>1999-10-21</birthday>
+        <nickname>虎子</nickname>
+    </user>
+    <user>
+        <id>1002</id>
+        <username>bbb</username>
+        <password>456</password>
+        <email>bbb@gmail.com</email>
+        <birthday>2000-5-9</birthday>
+        <nickname>嘎子</nickname>
+    </user>
+</users>

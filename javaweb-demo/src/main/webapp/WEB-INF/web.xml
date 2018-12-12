@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--
+    从 Tomcat 里复制过来的 web.xml 配置里有 metadata-complete="true"，导致注解无效，所以必须把这个去掉或配置为false。
+    Tomcat 里 conf/web.xml 中没有配置此属性，而 webapps/下自带的应用的 web.xml中都配置了 metadata-complete="true" 应该是这些应用都不使用注解。
+
+    刚开始还以为是 version="4.0" 版本的问题。
+
+    metadata-complete属性定义此模块的此部署描述符和其他相关部署描述符（例如，Web服务描述符）是否完整，
+    或者是否应检查此模块可用且与此应用程序打包的类文件是否有指定部署的注释信息。
+    如果metadata-complete设置为“true”，则部署工具必须忽略指定部署信息的任何注释，这些注释可能存在于应用程序的类文件中。
+    如果未指定metadata-complete或设置为“false”，则部署工具必须检查应用程序的类文件以获取注释，如规范所指定。-->
+    <!--metadata-complete="true"-->
+
+    <!--<session-config>-->
+    <!--<session-timeout>30</session-timeout>-->
+    <!--</session-config>-->
+
+</web-app>
