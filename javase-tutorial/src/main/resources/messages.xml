@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<messages>
+    <note id="501">
+        <to>George</to>
+        <from>John</from>
+        <heading>Reminder</heading>
+        <body>Don't forget the meeting!</body>
+    </note>
+    <note id="502">
+        <to>John</to>
+        <from>George</from>
+        <heading>Re: Reminder</heading>
+        <body>I will not</body>
+    </note>
+</messages>
